@@ -1,0 +1,185 @@
+.pagados {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h2 {
+    color: #4a6fa5; /* Azul principal */
+    font-size: 24px;
+    margin-bottom: 20px;
+
+    .mes-corriente {
+      color: #333; /* Texto oscuro */
+      text-transform: uppercase;
+      border-bottom: 1px solid #e0e0e0; /* Gris claro */
+      border-right: 1px solid #e0e0e0; /* Gris claro */
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+
+  /* Sección de Totales Pagados */
+  .totales-pagados-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    .totales-pagados-info {
+      background-color: #f8f9fa; /* Fondo claro */
+      border-bottom: 2px solid #dee2e6; /* Borde sutil */
+      color: #495057; /* Texto oscuro */
+      padding: 15px;
+      border-radius: 8px; /* Bordes más suaves */
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra sutil */
+
+      h3 {
+        margin: 0;
+        font-size: 18px;
+        padding: 5px;
+
+        span {
+          color: #4a6fa5; /* Azul principal */
+        }
+      }
+
+      .progreso-cuentas {
+        margin-top: 10px;
+        span {
+          display: block;
+          margin-bottom: 5px;
+          color: #6c757d; /* Gris medio */
+        }
+
+        .barra-progreso {
+          background-color: #e9ecef; /* Gris muy claro */
+          border-radius: 10px;
+          height: 10px;
+          width: 100%;
+          position: relative;
+
+          .relleno-progreso {
+            background-color: #4a6fa5; /* Azul principal */
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .grafico-barra {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+
+  /* Gráfico circular */
+  .grafico-circular {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+    h3 {
+      font-size: 18px;
+      color: #495057; /* Texto oscuro */
+      margin-bottom: 15px;
+    }
+
+    canvas {
+      max-width: 100%;
+      height: auto;
+      max-height: 200px;
+      width: auto;
+    }
+  }
+
+  /* Lista de cuentas (MANTENIENDO TU ESTRUCTURA EXACTA) */
+  .lista-cuentas {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    .cuenta-header,
+    .cuenta-item {
+      display: grid;
+      grid-template-columns: 60px repeat(7, 1fr);
+      gap: 2px;
+      align-items: center;
+      padding: 2px;
+      border-radius: 5px;
+    }
+
+    .cuenta-header {
+      background-color: rgba(74, 111, 165, 0.1); /* Azul con 10% opacidad */
+      color: #495057; /* Texto oscuro */
+      text-transform: uppercase;
+      padding: 15px;
+      font-size: 12px;
+      grid-template-columns: 60px repeat(7, 1fr);
+      border-bottom: 2px solid #dee2e6;
+    }
+
+    .cuenta-item {
+      background-color: white; /* Fondo blanco */
+      color: #495057; /* Texto oscuro */
+      font-size: 12px;
+      border: 1px solid #e0e0e0; /* Borde sutil */
+
+      span {
+        white-space: nowrap;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .id-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 60px;
+        max-width: 60px;
+        text-align: center;
+        margin-left: 10px;
+      }
+
+      .bloqueado {
+        background-color: #f8f9fa; /* Gris muy claro */
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+/* Botones (conservando tus estilos pero con colores de referencia) */
+button {
+  background-color: #4a6fa5; /* Azul principal */
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &:hover {
+    background-color: #3a5a80; /* Azul más oscuro */
+  }
+
+  i {
+    font-size: 16px;
+  }
+}

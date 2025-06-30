@@ -1,0 +1,23 @@
+// Estilos para íconos de WhatsApp
+
+.telefonoWhatsappMainContent {
+    position: fixed;
+    bottom: 1px; 
+    right: 1px;
+    z-index: 1000; 
+  }
+  
+  .logoWhatsappMainContent {
+    width: 80px;   
+    height: auto;  
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  
+    @media (max-width: 768px) {
+      width: 60px;
+    }
+  }
+  

@@ -1,0 +1,414 @@
+.formulario-gastos {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+
+  .finance-header-container {
+    margin-bottom: 20px;
+
+    .finance-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+
+      h1 {
+        font-size: 1.5rem;
+        color: #2c3e50;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .header-info {
+        display: flex;
+        gap: 20px;
+
+        .info-item {
+          display: flex;
+          gap: 5px;
+
+          .info-label {
+            font-weight: 600;
+            color: #7f8c8d;
+          }
+
+          .info-value {
+            color: #2c3e50;
+          }
+        }
+      }
+    }
+  }
+
+  .finance-controls {
+    margin-bottom: 20px;
+
+    .selectors {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+
+      .selector-group {
+        flex: 1;
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: 500;
+          color: #34495e;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+
+        select {
+          width: 100%;
+          padding: 8px 12px;
+          border-radius: 5px;
+          border: 1px solid #bdc3c7;
+          background-color: #fff;
+          font-size: 14px;
+          transition: border-color 0.3s;
+
+          &:focus {
+            outline: none;
+            border-color: #3498db;
+          }
+        }
+      }
+    }
+
+    .recordatorios-button {
+      background-color: #ffc107;
+      color: #212529;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      transition: all 0.3s;
+      
+      &:hover {
+        background-color: #ffca28;
+      }
+      
+      &.active {
+        background-color: #fd7e14;
+        color: white;
+      }
+      
+      .badge {
+        background-color: #dc3545;
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .recordatorios-panel {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #e9ecef;
+    
+    h3 {
+      margin-top: 0;
+      color: #495057;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .recordatorios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+  }
+
+  .recordatorio-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    border-left: 4px solid #dc3545;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+    
+    h4 {
+      margin-top: 0;
+      color: #212529;
+      font-size: 1.1rem;
+    }
+    
+    p {
+      margin: 5px 0;
+      color: #6c757d;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.9rem;
+    }
+  }
+
+  .recordatorio-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    
+    button {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+      
+      &:hover {
+        opacity: 0.9;
+      }
+      
+      &.pagar-button {
+        background-color: #28a745;
+        color: white;
+      }
+      
+      &.cargar-button {
+        background-color: #17a2b8;
+        color: white;
+      }
+    }
+  }
+
+  .finance-tabs {
+    display: flex;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 20px;
+
+    .tab-button {
+      padding: 10px 20px;
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      font-weight: 500;
+      color: #6c757d;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #495057;
+      }
+
+      &.active {
+        color: #3498db;
+        border-bottom-color: #3498db;
+      }
+    }
+  }
+
+  .tab-content {
+    .finance-form {
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+
+        .form-group {
+          margin-bottom: 15px;
+
+          label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #34495e;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+
+          select, input, textarea {
+            width: 100%;
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: 1px solid #bdc3c7;
+            font-size: 14px;
+            transition: border-color 0.3s;
+
+            &:focus {
+              outline: none;
+              border-color: #3498db;
+            }
+          }
+
+          textarea {
+            min-height: 80px;
+            resize: vertical;
+          }
+
+          .input-with-icon {
+            position: relative;
+
+            .currency-symbol {
+              position: absolute;
+              left: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+              font-weight: 500;
+              color: #7f8c8d;
+            }
+
+            input {
+              padding-left: 35px;
+            }
+          }
+
+          &.full-width {
+            grid-column: 1 / -1;
+          }
+        }
+      }
+
+      .submit-button {
+        background-color: #2ecc71;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 15px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #27ae60;
+        }
+      }
+    }
+  }
+
+  .default-values-manager {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 30px;
+    border: 1px solid #e9ecef;
+    
+    h4 {
+      margin-top: 0;
+      color: #495057;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .default-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .default-value {
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #495057;
+      font-size: 0.9rem;
+    }
+    
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ced4da;
+      font-size: 0.9rem;
+    }
+  }
+
+  .searchable-select {
+    position: relative;
+
+    .search-input {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: 1px solid #bdc3c7;
+      margin-bottom: 5px;
+      font-size: 14px;
+
+      &:focus {
+        outline: none;
+        border-color: #3498db;
+      }
+    }
+
+    select {
+      width: 100%;
+    }
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .formulario-gastos {
+    padding: 15px;
+
+    .finance-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+
+      .header-info {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+      }
+    }
+
+    .finance-controls {
+      .selectors {
+        flex-direction: column;
+      }
+    }
+
+    .recordatorios-grid,
+    .default-values-grid,
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "nombre": "ARM",
+    "categoria": "Impuesto Municipal"
+  },
+  {
+    "id": 2,
+    "nombre": "ARBA",
+    "categoria": "Impuesto Provincial"
+  },
+  {
+    "id": 3,
+    "nombre": "AFIP",
+    "categoria": "Agencia Recaudadora Nacional"
+  },
+  {
+    "id": 4,
+    "nombre": "Jubilacion Autónomos",
+    "categoria": "Jubilacion"
+  },
+  {
+    "id": 5,
+    "nombre": "Cargas Sociales Empleados Adm",
+    "categoria": "Cargas Sociales"
+  },
+  {
+    "id": 6,
+    "nombre": "Monotributo Titular 1",
+    "categoria": "Monotributo"
+  },
+  {
+    "id": 7,
+    "nombre": "Monotributo Titular 2",
+    "categoria": "Monotributo"
+  },
+  {
+    "id": 8,
+    "nombre": "Monotributo Titular 3",
+    "categoria": "Monotributo"
+  },
+  {
+    "id": 9,
+    "nombre": "IVA Titular 1",
+    "categoria": "IVA"
+  },
+  {
+    "id": 10,
+    "nombre": "Ingresos Brutos Titular 1",
+    "categoria": "Ingresos Brutos"
+  },
+  {
+    "id": 11,
+    "nombre": "Anticipo de Bienes Personales Titular 1 (Bimestral)",
+    "categoria": "Bienes Personales"
+  },
+  {
+    "id": 12,
+    "nombre": "Anticipo de Bienes Personales Titular 2 (Bimestral)",
+    "categoria": "Bienes Personales"
+  },
+  {
+    "id": 13,
+    "nombre": "Anticipo de Bienes Personales Titular 3 (Bimestral)",
+    "categoria": "Bienes Personales"
+  },
+  {
+    "id": 14,
+    "nombre": "FATHER",
+    "categoria": "FATHER"
+  },
+  {
+    "id": 15,
+    "nombre": "SUTHER",
+    "categoria": "SUTHER"
+  },
+  {
+    "id": 16,
+    "nombre": "TISH",
+    "categoria": "TISH"
+  },
+  {
+    "id": 17,
+    "nombre": "SEC",
+    "categoria": "SEC"
+  },
+  {
+    "id": 18,
+    "nombre": "OSECAC",
+    "categoria": "OSECAC"
+  },
+  {
+    "id": 19,
+    "nombre": "INCAP",
+    "categoria": "INCAP"
+  }
+]

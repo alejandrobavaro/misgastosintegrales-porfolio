@@ -1,0 +1,213 @@
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+
+  .data-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+
+    @media (min-width: 769px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .data-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h3 {
+      font-size: 16px;
+      color: #4a6fa5;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      overflow-x: auto;
+
+      th, td {
+        padding: 8px 12px;
+        border: 1px solid #dee2e6;
+        color: #495057;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f8f9fa;
+        font-weight: 500;
+      }
+    }
+
+    a {
+      color: #4a6fa5;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      border: 1px solid #4a6fa5;
+      padding: 6px 12px;
+      border-radius: 4px;
+      text-align: center;
+      transition: all 0.2s ease;
+      font-size: 14px;
+      align-self: flex-start;
+
+      &:hover {
+        background-color: rgba(74, 111, 165, 0.1);
+        color: #3a5a80;
+      }
+    }
+  }
+}
+
+// Barra de búsqueda y filtros
+.search-filter-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 10px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    select {
+      background-color: white;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      padding: 8px 12px;
+      font-size: 14px;
+      transition: border-color 0.15s ease-in-out;
+
+      &:hover,
+      &:focus {
+        border-color: #80bdff;
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+    }
+  }
+}
+
+.filter-field-select {
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.search-bar {
+  padding: 0;
+  background-color: transparent;
+  border-radius: 4px;
+
+  input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.15s ease-in-out;
+
+    &:focus {
+      border-color: #80bdff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+  }
+}
+
+.category-buttons {
+  grid-column: span 4;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  padding: 8px 0;
+
+  button {
+    background-color: rgba(74, 111, 165, 0.1);
+    border: 1px solid #4a6fa5;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #4a6fa5;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &.selected {
+      background-color: #4a6fa5;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .data-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .search-filter-container {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .data {
+    padding: 15px;
+  }
+  
+  .category-buttons {
+    gap: 6px;
+    
+    button {
+      padding: 5px 10px;
+      font-size: 13px;
+    }
+  }
+}

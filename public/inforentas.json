@@ -1,0 +1,319 @@
+[
+  {
+    "id": 1,
+    "Categoria": "Propiedades",
+    "Tipo": "Departamento",
+    "Nombre": "DPTO A1 1A",
+    "Alquilado": "Si",
+    "Alquilado a": "Lucía González",
+    "Alquilado por": "Inmobiliaria Costa Mar",
+    "Titular": "Pérez",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/01-foto-DPTO-A1-1A-Año-2025-01.jpg",
+      "/fotos-propiedades/01-foto-DPTO-A1-1A-Año-2025-02.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/01-ContratoAlquiler-DPTO-A1-1A-Año-2025.pdf",
+    "Inventario Listado": "",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 2,
+    "Categoria": "Propiedades",
+    "Tipo": "Departamento",
+    "Nombre": "DPTO B3 2B",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Gómez",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/02-foto-DPTO-B3-2B-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/02-ContratoAlquiler-DPTO-B3-2B-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 3,
+    "Categoria": "Propiedades",
+    "Tipo": "Departamento",
+    "Nombre": "DPTO C5 4C",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Martínez",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/03-foto-DPTO-C5-4C-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/03-ContratoAlquiler-DPTO-C5-4C-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 4,
+    "Categoria": "Propiedades",
+    "Tipo": "Departamento",
+    "Nombre": "DPTO D2 5D",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "López",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/04-foto-DPTO-D2-5D-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/04-ContratoAlquiler-DPTO-D2-5D-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 5,
+    "Categoria": "Propiedades",
+    "Tipo": "Departamento",
+    "Nombre": "DPTO E4 6E",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Fernández",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/05-foto-DPTO-E4-6E-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/05-ContratoAlquiler-DPTO-E4-6E-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 6,
+    "Categoria": "Propiedades",
+    "Tipo": "Departamento",
+    "Nombre": "DPTO F7 7F",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Romero",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/06-foto-DPTO-F7-7F-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/06-ContratoAlquiler-DPTO-F7-7F-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 7,
+    "Categoria": "Propiedades",
+    "Tipo": "Departamento",
+    "Nombre": "DPTO G9 8G",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Díaz",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/07-foto-DPTO-G9-8G-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/07-ContratoAlquiler-DPTO-G9-8G-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 8,
+    "Categoria": "Propiedades",
+    "Tipo": "Departamento",
+    "Nombre": "DPTO H6 9H",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Sánchez",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/08-foto-DPTO-H6-9H-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/08-ContratoAlquiler-DPTO-H6-9H-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 9,
+    "Categoria": "Propiedades",
+    "Tipo": "Departamento",
+    "Nombre": "DPTO I8 10I",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Torres",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/09-foto-DPTO-I8-10I-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/09-ContratoAlquiler-DPTO-I8-10I-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 10,
+    "Categoria": "Propiedades",
+    "Tipo": "Departamento",
+    "Nombre": "DPTO J10 11J",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Ruiz",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/10-foto-DPTO-J10-11J-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/10-ContratoAlquiler-DPTO-J10-11J-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 11,
+    "Categoria": "Propiedades",
+    "Tipo": "Cochera",
+    "Nombre": "COCH A1 1",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Silva",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/11-foto-COCH-A1-1-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/11-ContratoAlquiler-COCH-A1-1-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 12,
+    "Categoria": "Propiedades",
+    "Tipo": "Cochera",
+    "Nombre": "COCH B2 2",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Molina",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/12-foto-COCH-B2-2-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/12-ContratoAlquiler-COCH-B2-2-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 13,
+    "Categoria": "Propiedades",
+    "Tipo": "Cochera",
+    "Nombre": "COCH C3 3",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Castro",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/13-foto-COCH-C3-3-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/13-ContratoAlquiler-COCH-C3-3-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 14,
+    "Categoria": "Propiedades",
+    "Tipo": "Cochera",
+    "Nombre": "COCH D4 4",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Álvarez",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/14-foto-COCH-D4-4-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/14-ContratoAlquiler-COCH-D4-4-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  },
+  {
+    "id": 15,
+    "Categoria": "Propiedades",
+    "Tipo": "Cochera",
+    "Nombre": "COCH E5 5",
+    "Alquilado": "",
+    "Alquilado a": "",
+    "Alquilado por": "",
+    "Titular": "Gutiérrez",
+    "Importe Cobrado": "",
+    "Fecha de Cobro": "",
+    "Marcar como Cobrado": "",
+    "Facturado": "",
+    "Ver Fotos Propiedad": [
+      "/fotos-propiedades/15-foto-COCH-E5-5-Año-2025-01.jpg"
+    ],
+    "Contrato Imagen": "/contratos-alquiler/15-ContratoAlquiler-COCH-E5-5-Año-2025.pdf",
+    "Impuestos Pagados": "",
+    "Servicios Pagados": "",
+    "Total Ganancia Renta": ""
+  }
+]

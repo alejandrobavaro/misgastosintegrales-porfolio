@@ -1,0 +1,191 @@
+.alquileres {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h2 {
+    font-size: 18px;
+    color: #4a6fa5;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .totales {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+
+    .total-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e9ecef;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      span {
+        color: #4a6fa5;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .lista-propiedades {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .propiedad-header,
+    .propiedad-item {
+      display: grid;
+      grid-template-columns: 60px repeat(7, 1fr);
+      gap: 10px;
+      align-items: center;
+      background-color: white;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .propiedad-header {
+      background-color: #f8f9fa;
+      color: #495057;
+      text-transform: uppercase;
+      padding: 12px;
+      font-size: 14px;
+      font-weight: 500;
+      border-bottom: 2px solid #dee2e6;
+    }
+
+    .propiedad-item {
+      background-color: white;
+      color: #495057;
+      font-size: 14px;
+      transition: background-color 0.2s ease;
+
+      span {
+        white-space: nowrap;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .input-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        span {
+          color: #4a6fa5;
+          font-size: 16px;
+          margin-right: 8px;
+        }
+
+        input {
+          width: 100px;
+          padding: 8px 12px;
+          font-size: 14px;
+          text-align: right;
+          background-color: white;
+          color: #495057;
+          border: 1px solid #ced4da;
+          border-radius: 4px;
+          transition: border-color 0.15s ease-in-out;
+
+          &:focus {
+            border-color: #80bdff;
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          }
+        }
+      }
+
+      select {
+        width: 120px;
+        padding: 8px 12px;
+        font-size: 14px;
+        background-color: white;
+        color: #495057;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: border-color 0.15s ease-in-out;
+
+        &:focus {
+          border-color: #80bdff;
+          outline: none;
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        option {
+          background-color: white;
+          color: #495057;
+        }
+      }
+
+      button {
+        background-color: #4a6fa5;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        transition: background-color 0.2s ease;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        &:hover {
+          background-color: #3a5a80;
+        }
+
+        &:disabled {
+          background-color: #6c757d;
+          cursor: not-allowed;
+          opacity: 0.7;
+        }
+      }
+
+      &.bloqueado {
+        background-color: #f8f9fa;
+        pointer-events: none;
+        opacity: 0.7;
+
+        span {
+          color: #6c757d;
+        }
+      }
+    }
+  }
+}

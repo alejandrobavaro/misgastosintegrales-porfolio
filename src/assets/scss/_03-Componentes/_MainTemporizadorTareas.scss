@@ -1,0 +1,143 @@
+.main-temporizador-tareas {
+  display: flex;
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  display: inline-flex; /* Cambia de flex a inline-flex */
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0 0px 20px rgba(255, 255, 255, 0.534);
+  padding: 20px;
+  border-radius: 20px;
+
+  .timer-container {
+    background: linear-gradient(135deg, #1b97b64b, #0a2422ab);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.295);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .circle-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+
+    .circle {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0px 4px 10px rgb(255, 255, 255);
+      transition: background 0.4s ease-in-out;
+
+      .time-display {
+        position: absolute;
+        font-size: 22px;
+ 
+      }
+    }
+  }
+
+
+  .titulo-temporizador {
+    text-align: center;
+    font-size: medium;
+    color: #ffd900;
+    margin-bottom: 20px;
+   
+    }
+  
+
+
+  .task-input {
+    width: auto;
+    padding: 10px;
+    margin: 20px;
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 4px 10px rgba(0, 255, 191, 0.2);
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    button {
+      background-color: #0b6458;
+      color: #fff;
+      border: none;
+      padding: 8px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background-color 0.3s ease-in-out, transform 0.2s;
+
+      &:hover {
+        background-color: #25767c;
+      }
+
+      svg {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .history {
+    background: linear-gradient(135deg, #222, #444);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.856);
+    margin-left: 20px;
+    width: auto;
+
+    h3 {
+      margin-bottom: 10px;
+      color: #00ffd5;
+      font-size: small;
+      text-align: center;
+       }
+
+    ul {
+      list-style: circle; /* Asegúrate de que esta propiedad esté bien escrita */
+      color: #00fff2;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      max-height: 200px;
+      overflow-y: auto;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+        color: #fff;
+        font-size: 14px;
+
+        button {
+          background: transparent;
+          border: none;
+          color: #ff4f4f;
+          cursor: pointer;
+
+          &:hover {
+            color: #ff0000;
+          }
+        }
+      }
+    }
+  }
+}

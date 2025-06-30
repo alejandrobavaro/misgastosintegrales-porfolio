@@ -1,0 +1,77 @@
+// Estilos globales para los popups de SweetAlert
+.swal2-popup,
+.sweetalert-popup {
+  background-color: #095252ee !important;  // Fondo oscuro
+  border-radius: 15px;  // Bordes más suaves
+  color: #ffffff !important;  // Texto blanco
+  font-family: 'Montserrat Alternates', sans-serif !important;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);  // Sombra más profunda
+  transition: transform 0.3s ease, opacity 0.3s ease;  // Transición suave al aparecer/desaparecer
+}
+
+// Efecto de animación al aparecer el popup
+.swal2-popup.swal2-show,
+.sweetalert-popup.sweetalert-show {
+  transform: scale(1.05);  // Efecto de zoom al aparecer
+  opacity: 1;
+}
+
+// Títulos de los popups
+.swal2-title,
+.sweetalert-title {
+  color: #f8ffb5 !important;  
+  font-family: 'Montserrat Alternates', sans-serif !important;
+  font-size: large !important;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+// Texto en el contenido del popup
+.swal2-content,
+.sweetalert-text {
+  color: #dddddd !important;  // Texto gris claro
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+// Botones de confirmación
+.swal2-confirm,
+.swal-button--confirm,
+.sweetalert-button {
+  background-color: #9c3434 !important;  // Fondo rosa
+  color: #ffffff !important;  // Texto blanco
+  border: none;
+  border-radius: 30px;  // Bordes completamente redondeados para un efecto más moderno
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);  // Sombra suave en el botón
+}
+
+.swal2-confirm:hover,
+.sweetalert-button:hover {
+  background-color: #883e14 !important;  // Fondo más oscuro al hacer hover
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.548);  // Sombra más profunda al hacer hover
+}
+
+// Efecto al hacer clic en el botón
+.swal2-confirm:active,
+.sweetalert-button:active {
+  transform: translateY(2px);  // Pequeño efecto de "presionado" al hacer clic
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);  // Sombra reducida al hacer clic
+}
+
+// Estilo para texto adicional dentro del popup
+.swal-text {
+  color: #cccccc !important;  // Texto gris claro
+  font-size: 16px;
+}
+
+// Animación de salida
+.swal2-popup.swal2-hide,
+.sweetalert-popup.sweetalert-hide {
+  transform: scale(0.95);  // Efecto de reducción al cerrar
+  opacity: 0;
+}

@@ -1,0 +1,152 @@
+.banco-saldos {
+  background-color: white;
+  padding: 20px;
+  color: #495057;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #4a6fa5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .mensaje {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .saldo {
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    
+    strong {
+      color: #28a745;
+      font-weight: 500;
+    }
+  }
+
+  .importar-pdf {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    input[type="file"] {
+      padding: 8px 12px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: border-color 0.15s ease-in-out;
+
+      &:focus {
+        outline: none;
+        border-color: #80bdff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+    }
+  }
+
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    select {
+      padding: 10px 12px;
+      border: 1px solid #ced4da;
+      background-color: white;
+      color: #495057;
+      border-radius: 4px;
+      font-size: 14px;
+      flex: 1;
+      min-width: 200px;
+      transition: border-color 0.15s ease-in-out;
+
+      &:focus {
+        outline: none;
+        border-color: #80bdff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+    }
+  }
+
+  .charts {
+    margin: 20px 0;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+
+    canvas {
+      width: 100%;
+      max-height: 400px;
+    }
+  }
+
+  .saldos-list {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 1.2em;
+      color: #4a6fa5;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        margin: 12px 0;
+        padding: 8px 0;
+        text-align: center;
+        font-size: 1em;
+        border-bottom: 1px solid #e9ecef;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        strong {
+          color: #4a6fa5;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px;
+
+    .filters {
+      flex-direction: column;
+      gap: 10px;
+      
+      select {
+        min-width: 100%;
+      }
+    }
+  }
+}

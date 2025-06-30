@@ -1,0 +1,161 @@
+.gastos-totales {
+  padding: 20px;
+  background-color: white; /* Fondo blanco */
+  border-radius: 8px; /* Bordes más suaves */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra más sutil */
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h2 {
+    color: #4a6fa5; /* Azul principal */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: none; /* Eliminamos el efecto de sombra */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .chart-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+    .chart-button {
+      background-color: #4a6fa5; /* Azul principal */
+      color: white;
+      border: none;
+      border-radius: 4px; /* Bordes más cuadrados */
+      padding: 8px 20px; /* Más padding vertical */
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.2s ease;
+
+      &.active {
+        background-color: #3a5a80; /* Azul más oscuro */
+        font-weight: 500;
+      }
+
+      &:hover {
+        background-color: #3a5a80; /* Azul más oscuro */
+        transform: none; /* Eliminamos el efecto de escala */
+      }
+    }
+  }
+
+  .charts {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+      border-radius: 4px;
+      box-shadow: none; /* Eliminamos la sombra */
+    }
+  }
+
+  .totals-list {
+    background-color: #f8f9fa; /* Gris muy claro */
+    padding: 15px;
+    border-radius: 8px;
+    color: #495057; /* Texto oscuro */
+    text-align: left;
+    box-shadow: none; /* Eliminamos la sombra neon */
+    border: 1px solid #e0e0e0; /* Borde sutil */
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #4a6fa5; /* Azul principal */
+      text-shadow: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 12px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #e9ecef; /* Separador sutil */
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        strong {
+          color: #333; /* Texto más oscuro */
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    max-width: 100%;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .chart-buttons {
+      gap: 8px;
+
+      .chart-button {
+        padding: 6px 12px;
+        font-size: 13px;
+      }
+    }
+
+    .totals-list {
+      padding: 12px;
+
+      h3 {
+        font-size: 15px;
+      }
+
+      ul li {
+        font-size: 13px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 12px;
+
+    h2 {
+      font-size: 18px;
+    }
+
+    .chart-buttons {
+      flex-direction: row; /* Mantenemos en fila */
+      gap: 6px;
+
+      .chart-button {
+        font-size: 12px;
+        padding: 6px 10px;
+        flex: 1; /* Botones iguales */
+      }
+    }
+
+    .totals-list {
+      ul li {
+        flex-direction: column; /* Apilamos en móvil */
+        gap: 4px;
+      }
+    }
+  }
+}

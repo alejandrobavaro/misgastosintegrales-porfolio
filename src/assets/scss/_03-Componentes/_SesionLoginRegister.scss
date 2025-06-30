@@ -1,0 +1,185 @@
+//---------overlay de autenticación--------------------//
+.auth-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); // Fondo semi-transparente más claro
+  z-index: 1000;
+}
+
+//---------contenedor de autenticación--------------------//
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  .auth-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+
+    //---------imagen de autenticación--------------------//
+    .auth-image {
+      width: 80px;
+      height: auto;
+      margin: 1rem 0;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    //---------formulario de autenticación--------------------//
+    .auth-form {
+      flex: 1;
+      width: 100%;
+
+      h2 {
+        margin-bottom: 1.5rem;
+        color: #4a6fa5;
+        font-size: 1.5rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 1rem;
+        transition: border-color 0.15s ease-in-out;
+
+        &:focus {
+          outline: none;
+          border-color: #4a6fa5;
+          box-shadow: 0 0 0 0.2rem rgba(74, 111, 165, 0.25);
+        }
+      }
+
+      button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #4a6fa5;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        margin-top: 1rem;
+
+        &:hover {
+          background-color: #3a5a80;
+        }
+      }
+    }
+
+    //---------enlaces de autenticación--------------------//
+    .auth-links {
+      margin-top: 1.5rem;
+
+      p {
+        color: #6c757d;
+        font-size: 0.9rem;
+
+        a {
+          color: #4a6fa5;
+          text-decoration: none;
+          font-weight: 500;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 2rem;
+
+      .auth-image {
+        margin: 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+/*---------------------Loading Spinner------------------------*/
+.loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border: 8px solid rgba(74, 111, 165, 0.1);
+    border-radius: 50%;
+    border-top: 8px solid #4a6fa5;
+    animation: spin 1.5s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+//---------Inicio Sesion--------------------//
+.auth-buttons-column {
+  padding: 0;
+  background-color: transparent;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    margin: 1rem 0;
+  }
+}
+
+.auth-divider {
+  width: 80%;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 1.5rem 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.textoMenu2 {
+  font-size: 0.9rem;
+  color: #495057;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #4a6fa5;
+  }
+}

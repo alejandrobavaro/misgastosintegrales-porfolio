@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "nombre": "Proveedor Electricidad",
+    "categoria": "Electricidad",
+    "servicio": "Electricidad",
+    "codigo": ""
+  },
+  {
+    "id": 2,
+    "nombre": "Proveedor Gas",
+    "categoria": "Gas",
+    "servicio": "Gas",
+    "codigo": ""
+  },
+  {
+    "id": 3,
+    "nombre": "Proveedor Agua",
+    "categoria": "Agua",
+    "servicio": "Agua",
+    "codigo": ""
+  },
+  {
+    "id": 4,
+    "nombre": "Proveedor Internet y TV",
+    "categoria": "Servicio de TV e Internet",
+    "servicio": "Servicio de TV e Internet",
+    "codigo": ""
+  },
+  {
+    "id": 5,
+    "nombre": "Proveedor Telefonía Móvil",
+    "categoria": "Telefonía",
+    "servicio": "Telefonía Móvil",
+    "codigo": ""
+  },
+  {
+    "id": 6,
+    "nombre": "Proveedor Telefonía Fija",
+    "categoria": "Telefonía Fija",
+    "servicio": "Telefonía Fija",
+    "codigo": ""
+  },
+  {
+    "id": 7,
+    "nombre": "Alquiler Oficina",
+    "categoria": "Alquiler",
+    "servicio": "Alquiler",
+    "codigo": ""
+  },
+  {
+    "id": 8,
+    "nombre": "Sistema Administrativo",
+    "categoria": "Sistema Adm",
+    "servicio": "Sistema Adm",
+    "codigo": ""
+  },
+  {
+    "id": 9,
+    "nombre": "Sueldo Empleado A",
+    "categoria": "Sueldos",
+    "servicio": "Sueldo Empleado A",
+    "codigo": ""
+  },
+  {
+    "id": 10,
+    "nombre": "Sueldo Empleado B",
+    "categoria": "Sueldos",
+    "servicio": "Sueldo Empleado B",
+    "codigo": ""
+  },
+  {
+    "id": 11,
+    "nombre": "Sueldo Empleado C",
+    "categoria": "Sueldos",
+    "servicio": "Sueldo Empleado C",
+    "codigo": ""
+  },
+  {
+    "id": 12,
+    "nombre": "Sueldo Empleado D",
+    "categoria": "Sueldos",
+    "servicio": "Sueldo Empleado D",
+    "codigo": ""
+  },
+  {
+    "id": 13,
+    "nombre": "Sueldo Empleado E",
+    "categoria": "Sueldos",
+    "servicio": "Sueldo Empleado E",
+    "codigo": ""
+  }
+]

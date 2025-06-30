@@ -1,0 +1,384 @@
+// Estilos específicos para el resumen
+.resumen-gastos {
+  width: 48%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+  @media (max-width: 1200px) {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.filtros-excel {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  h4 {
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #495057;
+  }
+
+  .filtros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+
+    .form-group {
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 14px;
+        color: #495057;
+      }
+
+      input[type="date"],
+      input[type="number"] {
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      &.checkbox {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        label {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.summary-cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .summary-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    .card-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .card-content {
+      h3 {
+        margin: 0 0 5px 0;
+        font-size: 14px;
+        color: #6c757d;
+        font-weight: 500;
+      }
+
+      p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+
+    &.income {
+      .card-icon {
+        background-color: rgba(40, 167, 69, 0.1);
+        color: #28a745;
+      }
+
+      .card-content p {
+        color: #28a745;
+      }
+    }
+
+    &.expense {
+      .card-icon {
+        background-color: rgba(220, 53, 69, 0.1);
+        color: #dc3545;
+      }
+
+      .card-content p {
+        color: #dc3545;
+      }
+    }
+
+    &.balance {
+      .card-icon {
+        background-color: rgba(23, 162, 184, 0.1);
+        color: #17a2b8;
+      }
+
+      .card-content p {
+        &.positive {
+          color: #28a745;
+        }
+
+        &.negative {
+          color: #dc3545;
+        }
+      }
+    }
+  }
+}
+
+.detailed-totals {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  h4 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    color: #495057;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .total-categories {
+    max-height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .total-category {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 12px;
+      background-color: #f8f9fa;
+      border-radius: 4px;
+
+      span:first-child {
+        color: #495057;
+      }
+
+      .amount {
+        font-weight: 500;
+        color: #4a6fa5;
+      }
+    }
+  }
+}
+
+.excel-preview {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  .excel-header {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    
+    h3 {
+      margin: 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #1a6e1a;
+    }
+    
+    .toggle-excel {
+      background: none;
+      border: none;
+      color: #4a6fa5;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 5px;
+      border-radius: 4px;
+      
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+  
+  .excel-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+  }
+  
+  .property-section {
+    margin-bottom: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    .property-header {
+      background-color: #f5f7fa;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+      
+      h4 {
+        margin: 0;
+        font-size: 15px;
+        color: #333;
+      }
+      
+      .property-balance {
+        font-weight: 500;
+        font-size: 14px;
+        
+        &.positive {
+          color: #28a745;
+        }
+        
+        &.negative {
+          color: #dc3545;
+        }
+      }
+    }
+    
+    .ingresos-section, .egresos-section {
+      padding: 10px;
+      
+      h5 {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #555;
+        padding: 5px 0;
+        border-bottom: 1px solid #eee;
+      }
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-bottom: 10px;
+      
+      th, td {
+        padding: 8px;
+        border: 1px solid #e0e0e0;
+        text-align: left;
+      }
+      
+      th {
+        background-color: #f8f9fa;
+        font-weight: 500;
+        color: #555;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #fafafa;
+      }
+      
+      tr:hover {
+        background-color: #f0f0f0;
+      }
+    }
+    
+    .property-totals {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #f5f7fa;
+      border-top: 1px solid #e0e0e0;
+      font-size: 14px;
+      
+      div {
+        display: flex;
+        gap: 10px;
+        
+        span:first-child {
+          font-weight: 500;
+        }
+      }
+      
+      .total-ingresos span:last-child {
+        color: #28a745;
+        font-weight: 500;
+      }
+      
+      .total-egresos span:last-child {
+        color: #dc3545;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.excel-export-button {
+  background-color: #1d6f42;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  height: fit-content;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  &:hover {
+    background-color: #165a36;
+    transform: translateY(-1px);
+  }
+  
+  i {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,98 @@
+.vencimientos {
+  padding: 20px;
+  background-color: white;
+  color: #495057;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h2 {
+    color: #4a6fa5;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      display: flex;
+      gap: 10px;
+
+      button {
+        background-color: #4a6fa5;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        &:hover {
+          background-color: #3a5a80;
+          transform: none;
+        }
+      }
+    }
+  }
+
+  .calendar-outer-container {
+    margin-bottom: 20px;
+  }
+
+  .lista-vencimientos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .vencimiento-header,
+    .vencimiento-item {
+      display: grid;
+      grid-template-columns: 60px repeat(5, 1fr);
+      gap: 10px;
+      align-items: center;
+      background-color: white;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .vencimiento-header {
+      background-color: #f8f9fa;
+      color: #495057;
+      font-size: 14px;
+      font-weight: 500;
+      border-bottom: 2px solid #dee2e6;
+    }
+
+    .vencimiento-item {
+      background-color: white;
+      color: #495057;
+      font-size: 14px;
+      transition: background-color 0.2s ease;
+
+      &:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+
+      &:hover {
+        background-color: #f1f3f5;
+      }
+
+      span {
+        text-align: center;
+        padding: 4px;
+      }
+
+      .id-col {
+        min-width: 60px;
+        font-weight: 500;
+      }
+    }
+  }
+}

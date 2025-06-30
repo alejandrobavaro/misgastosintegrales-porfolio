@@ -1,0 +1,51 @@
+// Estilos base compartidos
+.gestion-finanzas-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  padding: 20px;
+}
+
+.finance-main {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.finance-layout {
+  display: flex;
+  gap: 20px;
+  
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #4a6fa5;
+  animation: spin 1s ease-in-out infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error-message {
+  padding: 15px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

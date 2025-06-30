@@ -1,0 +1,41 @@
+//src\assets\scss\_01-General\_AlertsModalsMsjs.scss//
+
+//--------TOASTIFYS-----------//
+
+.toastify-tienda {
+  background-color: #ff0073c1 !important; /* Color de fondo */
+  color: #fff !important; /* Color del texto */
+  padding: 10px !important; /* Espaciado interno */
+  border-radius: 20px !important; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgb(255, 0, 149) !important; /* Sombra */
+  font-size: 10px !important; /* Tamaño de fuente */
+  margin-top: 2px !important; /* Ajustar distancia desde la parte superior */
+  margin-left: 50px !important; /* Ajustar distancia desde el lado izquierdo */
+}
+
+/* Estilos para los botones del mensaje Toastify */
+.toastify-total .toast-close-button {
+  color: #fff !important; /* Color del botón */
+  font-size: 14px !important; /* Tamaño de fuente */
+  font-weight: bold !important; /* Peso de la fuente */
+}
+
+// Estilos para Toastify
+.toastify-musica {
+  background-color: #ff0073c1 !important; /* Color de fondo */
+  color: #fff !important; /* Color del texto */
+  padding: 10px !important; /* Espaciado interno */
+  border-radius: 20px !important; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgb(255, 0, 149) !important; /* Sombra */
+  font-size: 10px !important; /* Tamaño de fuente */
+  margin-top: 2px !important; /* Ajustar distancia desde la parte superior */
+  margin-left: 50px !important; /* Ajustar distancia desde el lado izquierdo */
+}
+
+// Estilos para los botones del mensaje Toastify
+.toastify-musica .toast-close-button {
+  color: #fff !important; /* Color del botón */
+  font-size: 14px !important; /* Tamaño de fuente */
+  font-weight: bold !important; /* Peso de la fuente */
+}
+

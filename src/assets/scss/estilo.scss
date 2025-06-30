@@ -1,0 +1,80 @@
+/*-----------------SASS A CSS------------------------*/
+//------------GENERAL--------------//
+@import "./_01-General/BodyIndexApp";
+
+@import "./_01-General/SweetAlert";
+@import "./_01-General/Toastify";
+
+
+//----------COMPONENTES------------------------//
+//------------HEADER--------------//
+
+@import "./_03-Componentes/HeaderNotificaciones";
+
+@import "./_03-Componentes/HeaderUnificado";
+
+@import "./_03-Componentes/HeaderDolarApi";
+
+
+//------------SIDEBAR--------------//
+@import "./_03-Componentes/Sidebar";
+
+//-----------HOME - MAIN-----------------//
+@import "./_03-Componentes/MainPublicidadSlider";
+@import "./_03-Componentes/MainContent";
+@import "./_03-Componentes/MainCalendarioPagos";
+@import "./_03-Componentes/MainNotas";
+@import "./_03-Componentes/MainTareasEnProceso";
+@import "./_03-Componentes/MainCalculadora";
+@import "./_03-Componentes/MainTemporizadorTareas";
+@import "./_03-Componentes/MainTemporizadorTimePicker";
+
+@import "./_03-Componentes/MainContentNovedades";
+
+
+
+
+//--------------FOOTER----------------//
+@import "./_03-Componentes/Footer";
+@import "./_03-Componentes/FooterGondraWorldDev";
+
+@import "./_03-Componentes/Contacto";
+@import "./_03-Componentes/Totales";
+@import "./_03-Componentes/Cobranza";
+@import "./_03-Componentes/Data";
+@import "./_03-Componentes/SesionLoginRegister";
+
+
+@import "./_03-Componentes/ConsultasAyuda";
+
+@import "./_03-Componentes/ConsultasComprobantes";
+@import "./_03-Componentes/ConsultasFacturas";
+
+
+@import "./_03-Componentes/DataInfoCuentas";
+
+@import "./_03-Componentes/GastosPagados";
+@import "./_03-Componentes/GastosPorPagar";
+@import "./_03-Componentes/GastosTotales";
+
+
+@import "./_03-Componentes/BancoSaldos";
+
+@import "./_03-Componentes/RentasAlquileres";
+@import "./_03-Componentes/RentasCobranza";
+@import "./_03-Componentes/RentasInfoExtra";
+
+@import "./_03-Componentes/ConsultasVencimientos";
+
+@import "./_03-Componentes/CPEServiciosListado";
+@import "./_03-Componentes/CPEImpuestosListado";
+@import "./_03-Componentes/CPECargarNuevoCPE";
+
+
+
+@import "./_03-Componentes/GestionFinanzas";
+
+
+@import "./_03-Componentes/GestionFinanzasTutorial";
+
+

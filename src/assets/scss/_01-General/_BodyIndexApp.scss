@@ -1,0 +1,338 @@
+/*--------------Estilos Globales--------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  font-size: 100%;
+  background-color: #f5f7fa;
+}
+
+/*--------------Estilos Body--------------*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*--------------Estilos para el Contenedor Principal--------------*/
+.app {
+  padding: 1.5rem;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.main-content {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content {
+  flex-grow: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/*--------------Estilos para los Encabezados y Texto--------------*/
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  
+  i {
+    color: #4a6fa5;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #495057;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/*--------------Estilos para Listas--------------*/
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  
+  li {
+    margin-bottom: 0.5rem;
+    list-style-position: outside;
+  }
+}
+
+ul {
+  list-style-type: none;
+  
+  li {
+    position: relative;
+    padding-left: 1.25rem;
+    
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #4a6fa5;
+    }
+  }
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+/*--------------Estilos para Tablas--------------*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  
+  thead {
+    tr {
+      background-color: #f8f9fa;
+      border-bottom: 2px solid #dee2e6;
+      
+      th {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        font-size: 0.875rem;
+        color: #495057;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+    }
+  }
+  
+  tbody {
+    tr {
+      border-bottom: 1px solid #e9ecef;
+      
+      &:hover {
+        background-color: #f8f9fa;
+      }
+      
+      td {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+        color: #495057;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+/*--------------Estilos para Enlaces--------------*/
+a {
+  color: #4a6fa5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: #3a5a80;
+    text-decoration: underline;
+  }
+}
+
+/*--------------Estilos para Botones--------------*/
+button, .button {
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: #3a5a80;
+    text-decoration: none;
+  }
+  
+  &.secondary {
+    background-color: #6c757d;
+    
+    &:hover {
+      background-color: #5a6268;
+    }
+  }
+  
+  &.outline {
+    background-color: transparent;
+    border: 1px solid #4a6fa5;
+    color: #4a6fa5;
+    
+    &:hover {
+      background-color: rgba(74, 111, 165, 0.1);
+    }
+  }
+  
+  i {
+    font-size: 1rem;
+  }
+}
+
+/*--------------Estilos para Formularios--------------*/
+input, textarea, select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  transition: border-color 0.15s ease-in-out;
+  
+  &:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: #495057;
+    font-weight: 500;
+  }
+}
+
+/*--------------Estilos para Tarjetas--------------*/
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+    
+    h2, h3, h4 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*--------------Estilos para Alertas--------------*/
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  
+  &-success {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+    border-left: 4px solid #28a745;
+  }
+  
+  &-error {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    border-left: 4px solid #dc3545;
+  }
+  
+  &-info {
+    background-color: rgba(23, 162, 184, 0.1);
+    color: #17a2b8;
+    border-left: 4px solid #17a2b8;
+  }
+  
+  &-warning {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+    border-left: 4px solid #ffc107;
+  }
+}
+
+/*--------------Animaciones--------------*/
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease forwards;
+}
+
+/*--------------Responsive--------------*/
+@media (max-width: 992px) {
+  .main-content {
+    flex-direction: column;
+  }
+  
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+}

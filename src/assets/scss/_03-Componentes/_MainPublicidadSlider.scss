@@ -1,0 +1,112 @@
+//---------contenedor principal--------------------//
+
+.gridPadrePublicidad1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 30px;
+  width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+}
+
+//---------contenedor de publicidad--------------------//
+
+.publicidad-grid-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+}
+
+//---------fila de publicidad--------------------//
+
+.fila-publicidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row; /* Cambia la dirección de la fila en pantallas más grandes */
+    justify-content: center;
+  }
+}
+
+//---------contenedor de slider--------------------//
+
+.publicidad-container {
+  width: 100%;
+  max-width: 520px;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 20px;
+  // box-shadow: 0 0 40px rgba(255, 145, 0, 0.463);
+}
+
+//---------elemento del slider--------------------//
+
+.slide-item {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  .imagen-publicidad {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    padding: 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+//---------título importante--------------------//
+
+.tituloImportante3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #00ccff;
+  margin: 20px 0;
+  animation: moveText 1.5s infinite alternate;
+}
+
+//---------contenedor de productos--------------------//
+
+.gridPadreProductos1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: center;
+  // width: 90%;
+}
+
+//---------imagen limitada--------------------//
+
+.imagen-limitada8 {
+  width: 100px;
+  height: auto;
+  // border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+//---------línea divisoria transparente--------------------//
+
+.transparent-hr {
+  border: none; /* Elimina el borde predeterminado */
+  height: 1px; /* Ajusta la altura según el grosor deseado */
+  background-color: rgba(0, 0, 0, 0.2); /* Color de fondo con transparencia */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+}

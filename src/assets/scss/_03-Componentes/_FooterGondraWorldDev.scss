@@ -1,0 +1,112 @@
+.trademarkGondraFooter {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textoFooterAutor {
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  color: #495057;
+  margin-bottom: 20px;
+}
+
+.gridPadreProductosGondraFooter1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: white;
+}
+
+.texto-principal {
+  font-size: 16px;
+  color: #4a6fa5;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.textoFooterGondraWorld {
+  font-size: 14px;
+  transition: transform 0.2s ease;
+  color: #6c757d;
+
+  &:hover {
+    transform: scale(1.05);
+    color: #4a6fa5;
+  }
+}
+
+.texto-secundario {
+  font-size: 14px;
+  color: #6c757d;
+  margin-left: 10px;
+}
+
+.imagen-limitada8 {
+  max-width: 120px;
+  height: auto;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.objetoCentrado1 {
+  display: block;
+  margin: 0 auto;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .texto-principal {
+    font-size: 15px;
+  }
+
+  .texto-secundario {
+    font-size: 14px;
+  }
+
+  .imagen-limitada8 {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .texto-principal {
+    font-size: 14px;
+  }
+
+  .texto-secundario {
+    font-size: 13px;
+  }
+
+  .imagen-limitada8 {
+    max-width: 80px;
+  }
+
+  .gridPadreProductosGondraFooter1 {
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .textoFooterAutor {
+    padding: 15px;
+    margin-top: 0;
+  }
+}

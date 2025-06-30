@@ -1,0 +1,181 @@
+.cargar-cpe-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 5px;
+      color: #01675d;
+    }
+  
+    h6 {
+      text-align: center;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+  
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: medium;
+        font-weight: bold;
+        color: #0e0f34;
+      }
+  
+      input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: small;
+        transition: border-color 0.3s ease;
+  
+        &:focus {
+          border-color: #3498db;
+          outline: none;
+        }
+      }
+  
+      .input-group {
+        display: flex;
+        align-items: center;
+  
+        input {
+          flex: 1;
+          margin-right: 10px;
+        }
+  
+        .btn-validate {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 6px;
+          background-color: #3498db;
+          color: #fff;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #2980b9;
+          }
+        }
+      }
+  
+      .input-error {
+        border-color: #e74c3c;
+      }
+  
+      .error-message {
+        color: #e74c3c;
+        margin-top: 5px;
+        font-size: small;
+      }
+  
+      .required-message {
+        color: #e74c3c;
+        margin-top: 5px;
+        font-size: small;
+      }
+    }
+  
+    .alias-group {
+      margin-bottom: 20px;
+  
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+      }
+  
+      input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: small;
+        transition: border-color 0.3s ease;
+  
+        &:focus {
+          border-color: #3498db;
+          outline: none;
+        }
+      }
+    }
+  
+    .action-buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+  
+      button {
+        flex: 1;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: small;
+        color: #fff;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-2px);
+        }
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      .btn-cancel {
+        background-color: #611111;
+        color: #ffffff;
+      }
+  
+      .btn-adhere {
+        background-color: #0c588b;
+      }
+  
+      .btn-pay-adhere {
+        background-color: #111065;
+      }
+    }
+
+    .options-list {
+        position: absolute;
+        background-color: #ffffff;
+        box-shadow: 0 5px 10px rgba(5, 64, 90, 0.3);
+        border-radius: 4px;
+        max-width: 400px; /* Establece un ancho máximo */
+        width: auto; /* Ajusta el ancho según el contenido */
+        margin: 0;
+        font-size: x-small;
+        max-height: 300px;
+        overflow-y: auto;
+        z-index: 10;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Ajusta el ancho al contenido */
+      
+        .option-item {
+          padding: 5px; /* Reduce el padding para más compresión */
+          border-bottom: 1px solid #00e5ff6f;
+          margin: 0;
+          cursor: pointer;
+          font-size: x-small; /* Asegúrate de que el tamaño de la fuente sea consistente */
+      
+          &:hover {
+            background-color: #dbf3ff;
+          }
+        }
+      }
+      
+  }
+  

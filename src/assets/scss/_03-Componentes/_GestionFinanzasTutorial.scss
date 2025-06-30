@@ -1,0 +1,238 @@
+.tutorial-button {
+  position: fixed;
+  bottom: 250px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: #3a5a80;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  i {
+    font-size: 24px;
+  }
+}
+
+.tutorial-modal {
+  .modal-header {
+    background-color: #4a6fa5;
+    color: white;
+    border-bottom: none;
+    padding: 1.2rem 1.5rem;
+    
+    .modal-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.25rem;
+      font-weight: 500;
+      
+      i {
+        font-size: 1.5rem;
+      }
+    }
+    
+    .btn-close {
+      filter: invert(1);
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+      
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .modal-body {
+    padding: 1.5rem;
+  }
+  
+  .tutorial-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .tutorial-text {
+      flex: 1;
+      min-width: 0;
+      
+      p, ol, ul {
+        margin-bottom: 15px;
+        line-height: 1.6;
+      }
+      
+      ol, ul {
+        padding-left: 20px;
+      }
+      
+      li {
+        margin-bottom: 8px;
+      }
+      
+      strong {
+        color: #2c3e50;
+        font-weight: 600;
+      }
+      
+      .tip {
+        background-color: #fff8e1;
+        padding: 12px 15px;
+        border-radius: 6px;
+        border-left: 4px solid #ffc107;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 20px;
+        font-size: 0.95rem;
+        
+        i {
+          color: #ffc107;
+          font-size: 1.2rem;
+          margin-top: 2px;
+        }
+      }
+    }
+    
+    .tutorial-image {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      padding: 15px;
+      border: 1px solid #e9ecef;
+      
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  
+  .step-indicator {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  
+  .modal-footer {
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #e9ecef;
+    
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.5rem 1.25rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      
+      i {
+        font-size: 1.1rem;
+      }
+      
+      &:disabled {
+        opacity: 0.65;
+      }
+    }
+    
+    .btn-secondary {
+      background-color: #6c757d;
+      border-color: #6c757d;
+      
+      &:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+      }
+    }
+    
+    .btn-primary {
+      background-color: #4a6fa5;
+      border-color: #4a6fa5;
+      
+      &:hover {
+        background-color: #3a5a80;
+        border-color: #354f70;
+      }
+    }
+  }
+}
+
+// Efectos de transición para el modal
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out, opacity 0.3s ease;
+  transform: translate(0, 20px);
+}
+
+.modal.show .modal-dialog {
+  transform: translate(0, 0);
+}
+
+// Responsive adicional
+@media (max-width: 576px) {
+  .tutorial-button {
+    bottom: 120px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    
+    i {
+      font-size: 20px;
+    }
+  }
+  
+  .tutorial-modal {
+    .modal-header {
+      padding: 1rem;
+      
+      .modal-title {
+        font-size: 1.1rem;
+      }
+    }
+    
+    .modal-body {
+      padding: 1rem;
+    }
+    
+    .tutorial-content {
+      .tutorial-text {
+        font-size: 0.95rem;
+      }
+    }
+    
+    .modal-footer {
+      padding: 0.75rem;
+      
+      .btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
